@@ -47,7 +47,7 @@ body {
 }
 
 .menu-toggle {
-    color: #5f0500;                                          
+    color: #5f0500;
     background: none;
     border: none;
     font-size: 2rem;
@@ -83,7 +83,7 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    width: 20vw;
+    width: 30vw;
     height: 100%;
     background-color: #ffffff;
     text-align: left;
@@ -91,6 +91,12 @@ body {
     z-index: 3;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+}
+
+@media(max-width: 700px) {
+    .menu {
+        width: 100%;
+    }
 }
 
 .menu-item {
@@ -125,6 +131,7 @@ body {
     from {
         transform: translateX(100%);
     }
+
     to {
         transform: translateX(0);
     }
@@ -134,6 +141,7 @@ body {
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(100%);
     }
@@ -164,7 +172,7 @@ body {
 }
 
 .info-equipe {
-    width: 80%;
+    width: 90%;
     margin: auto;
     justify-items: center;
     color: #8d0801;
@@ -193,6 +201,46 @@ body {
     font-size: 90px;
 }
 
+.membro-nome {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.membro-img {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.nome {
+    font-size: 20px;
+    color: #f7b538;
+}
+
+.victor-hugo {
+    margin-top: -50px;
+}
+
+.eduarda {
+    margin-top: -50px;
+}
+
+.marina {
+    margin-top: -25px;
+}
+
+.gustavo {
+    margin-top: -60px;
+}
+
+.izaque {
+    margin-top: -30px;
+}
+
 .patrocinadores {
     background-color: #f7b538;
     font-family: 'League Gothic';
@@ -208,6 +256,9 @@ body {
 .display-flex-wrap {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5vw;
+    padding: 10px;
 }
 
 .display-flex-wrap.patrocinadores {
